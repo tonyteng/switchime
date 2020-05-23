@@ -12,9 +12,10 @@ Loop
     WinWaitNotActive, Ahk_id %ActiveHwnd%
 }
 
-#if WinActive("Ahk_group EN")
-    Shift:: switchime(1)
+;#if WinActive("Ahk_group EN")
+;    Shift:: switchime(1)
 ~Escape:: switchime(0)
+Shift:: switchime(1)
 
 switchime(ime := "A")
 {
